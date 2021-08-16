@@ -8,7 +8,7 @@ resources:
 
 patchesStrategicMerge:
 - patches/configmap-patch.yaml
-- patches/add-custom-kustomize.yaml
+- patches/argo-cd-repo-server-ksops.yaml
 
 images:
 - name: ghcr.io/dexidp/dex
