@@ -15,7 +15,7 @@ spec:
         prometheus:
           enabled: false
         webhook:
-          timeoutSeconds: 4s
+          timeoutSeconds: 4
   destination:
     server: https://kubernetes.default.svc
     namespace: cert-manager
