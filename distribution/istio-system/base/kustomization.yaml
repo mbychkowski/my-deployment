@@ -5,3 +5,4 @@ resources:
 - namespace.yaml
 - base.yaml
 - istio-control.yaml
+- istio-operator.yaml
