@@ -8,10 +8,7 @@ resources:
 
 patchesStrategicMerge:
 - patches/configmap-patch.yaml
-- patches/argo-cd-repo-server-ksops-patch.yaml
-
-# generators:
-# - ksops-secret-generator.yaml
+- patches/argocd-repo-server-patch.yaml
 
 images:
 - name: ghcr.io/dexidp/dex
