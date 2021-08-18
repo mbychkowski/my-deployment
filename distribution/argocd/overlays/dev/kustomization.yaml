@@ -5,4 +5,4 @@ namespace: argocd
 resources:
   ## Common
 - ../../base/
-- env/secret-gcp-kms.yaml
+# - env/secret-gcp-kms.yaml
