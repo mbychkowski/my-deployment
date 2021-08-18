@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: distribution/argocd/overlays/dev
     kustomize:
-      version: v4.0.5
+      version: v4.2.0+ksops.v2.6.0
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
