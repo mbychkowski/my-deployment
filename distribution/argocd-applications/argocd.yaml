@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/mbychkowski/my-deployment
+    repoURL: git@github.com:mbychkowski/my-deployment.git
     targetRevision: HEAD
     path: distribution/argocd/overlays/dev
     kustomize:
