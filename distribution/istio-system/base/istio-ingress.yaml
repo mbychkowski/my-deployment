@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/istio/istio.git
     targetRevision: '1.11.0'
-    path: manifests/charts/istio-operator
+    path: manifests/charts/gateways/istio-ingress
     helm:
       valueFiles: 
         - values.yaml
