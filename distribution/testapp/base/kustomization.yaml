@@ -4,3 +4,6 @@ namespace: test
 
 generators:
 - ksops-secret-generator.yaml
+
+resources:
+- namespace.yaml
