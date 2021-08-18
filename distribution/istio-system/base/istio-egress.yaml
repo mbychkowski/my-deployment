@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: istio-control
+  name: istio-egress
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/istio/istio.git
     targetRevision: '1.11.0'
-    path: manifests/charts/istio-control/istio-discovery
+    path: manifests/charts/gateways/istio-egress
     helm:
       valueFiles: 
         - values.yaml
