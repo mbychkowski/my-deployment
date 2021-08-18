@@ -3,9 +3,8 @@ kind: Kustomization
 
 resources:
   ## Common
-  - argocd-applications/argocd.yaml
-  - argocd-applications/testapp.yaml
-  - argocd-applications/istio-system.yaml
-# - argocd-applications/istio-operator.yaml
-# - argocd-applications/istio.yaml
-# - argocd-applications/istio-resources.yaml
+  - _argocd-applications/argocd.yaml
+  - _argocd-applications/testapp.yaml
+  - _argocd-applications/istio-system.yaml
+  - _argocd-applications/cert-manager.yaml
+  # - _argocd-applications/my-platform.yaml

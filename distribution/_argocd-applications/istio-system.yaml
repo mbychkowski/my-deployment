@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd
+  name: istio-system-app
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: git@github.com:mbychkowski/my-deployment.git
     targetRevision: HEAD
-    path: distribution/argocd/overlays/dev
+    path: distribution/istio-system/base
     kustomize:
-      version: v4.2.0_ksops.v2.6.0
+      version: v4.2.0_ksops.v2.6.0    
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:

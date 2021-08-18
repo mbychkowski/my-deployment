@@ -1,20 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: istio-ingress
+  name: cert-manager-app
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/istio/istio.git
-    targetRevision: '1.11.0'
-    path: manifests/charts/gateways/istio-ingress
-    helm:
-      valueFiles: 
-        - values.yaml
+    repoURL: git@github.com:mbychkowski/my-deployment.git
+    targetRevision: HEAD
+    path: distribution/cert-manager/base
+    kustomize:
+      version: v4.2.0_ksops.v2.6.0
   destination:
     server: https://kubernetes.default.svc
-    namespace: istio-system
   syncPolicy:
     automated:
       prune: true
