@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: bychkow-ski-ingress-cert
+  namespace: istio-system
+spec:
+  secretName: bychkow-ski-ingress-cert-tls
+  issuerRef:
+    # The issuer created previously
+    name: letsencrypt-prod
+  dnsNames:
+  - bychkow.ski
+  - ops.bychkow.ski

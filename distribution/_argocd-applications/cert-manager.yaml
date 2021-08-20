@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: git@github.com:mbychkowski/my-deployment.git
     targetRevision: HEAD
-    path: distribution/cert-manager/base
+    path: distribution/cert-manager/overlay/dev
     kustomize:
       version: v4.2.0_ksops.v2.6.0
   destination:
