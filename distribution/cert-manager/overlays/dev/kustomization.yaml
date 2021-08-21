@@ -7,4 +7,3 @@ generators:
 resources:
 - ../../base/
 - clusterissuer.yaml
-- clouddns-dns01-solver-svc-acct.enc.yaml
