@@ -12,9 +12,9 @@ spec:
       number: 80
       protocol: HTTP
     tls:
-      httpsRedirect: true    
+      httpsRedirect: true
     hosts:
-    - '*.bychkow.ski'  
+    - '*.bychkow.ski'
   - port:
       number: 443
       name: https
