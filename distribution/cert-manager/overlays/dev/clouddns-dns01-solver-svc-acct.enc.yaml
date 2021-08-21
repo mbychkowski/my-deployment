@@ -4,7 +4,8 @@ data:
 kind: ENC[AES256_GCM,data:0AeFm4bn,iv:v79XjVoAfuketiOb6tMdS/h20z0KSjGLOA8Nau7YB8k=,tag:FWg7uE02b1RBIcbq74dBGQ==,type:str]
 metadata:
     name: ENC[AES256_GCM,data:nbeU6mL3AREREqfvVc2yXpiK47XwyiUSEkcSthpn,iv:4+pt31sN6shST2WFv7WpCkUepE/yoNwOgIox+8/DB+U=,tag:+vtpeEBy9ZYEFsbSJetJ7Q==,type:str]
-    namespace: ENC[AES256_GCM,data:KQwlPt7MTVlBEOlz,iv:M5Fl9x1D1qwgvAoheBp6hQotat4JhWlfQzcMf4kLSrs=,tag:dnc7XgZpR7b2FolsJPOBjQ==,type:str]
+    namespace: istio-system
+    # namespace: ENC[AES256_GCM,data:KQwlPt7MTVlBEOlz,iv:M5Fl9x1D1qwgvAoheBp6hQotat4JhWlfQzcMf4kLSrs=,tag:dnc7XgZpR7b2FolsJPOBjQ==,type:str]
 sops:
     kms: []
     gcp_kms:
