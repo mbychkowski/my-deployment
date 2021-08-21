@@ -7,4 +7,4 @@ resources:
   - _argocd-applications/testapp.yaml
   - _argocd-applications/istio-system.yaml
   - _argocd-applications/cert-manager.yaml
-  # - _argocd-applications/my-platform.yaml
+  - _argocd-applications/my-platform.yaml

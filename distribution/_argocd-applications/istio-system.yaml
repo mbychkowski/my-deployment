@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: git@github.com:mbychkowski/my-deployment.git
     targetRevision: HEAD
-    path: distribution/istio-system/base
+    path: distribution/istio-system/overlays/dev
     kustomize:
       version: v4.2.0_ksops.v2.6.0    
   destination:

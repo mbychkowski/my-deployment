@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: istio-ingress-my-platform
+  name: istio-ingressgateway
   namespace: argocd
 spec:
   project: default
@@ -14,7 +14,7 @@ spec:
         - values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: my-platform
+    namespace: istio-system
   syncPolicy:
     automated:
       prune: true

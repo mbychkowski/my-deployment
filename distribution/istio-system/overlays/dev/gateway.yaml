@@ -1,0 +1,26 @@
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: my-platform-gateway
+  namespace: default
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      name: http
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true    
+    hosts:
+    - '*.bychkow.ski'  
+  - port:
+      number: 443
+      name: https
+      protocol: https
+    tls:
+      mode: SIMPLE
+      credentialName: ingress-cert # This should match the Certificate secretName
+    hosts:
+    - '*.bychkow.ski' # This should match a DNS name in the Certificate      
