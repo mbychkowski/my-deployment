@@ -35,5 +35,5 @@ gcloud kms keys list --location global --keyring sops
 
 KEY_LOCATION='project/<project_id>/locations/global/keyRings/<name>/<type>/<key>
 
-sops --encrypt --gcp-kms $KEY_LOCATION secret.yaml > secret.enc2.yaml
+sops --encrypt --gcp-kms $KEY_LOCATION secret.yaml > secret.enc.yaml
 ```
