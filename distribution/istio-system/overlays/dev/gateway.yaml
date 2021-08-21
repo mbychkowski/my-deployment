@@ -21,6 +21,6 @@ spec:
       protocol: https
     tls:
       mode: SIMPLE
-      credentialName: ingress-cert # This should match the Certificate secretName
+      credentialName: bychkow-ski-ingress-cert-9p6k7 # This should match the Certificate secretName
     hosts:
     - '*.bychkow.ski' # This should match a DNS name in the Certificate      
