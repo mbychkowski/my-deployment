@@ -10,3 +10,4 @@ spec:
     name: letsencrypt-prod
   dnsNames:
   - bychkow.ski
+  - ops.bychkow.ski
