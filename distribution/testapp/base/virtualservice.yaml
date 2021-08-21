@@ -7,13 +7,11 @@ spec:
   gateways:
     - platform-gateway.istio-system.svc.cluster.local
   hosts:
-    - "bychkow.ski"
+    - "www.bychkow.ski"
   http:
     - match:
         - uri:
             prefix: /
-      rewrite:
-        uri: /
       route:
         - destination:
             host: nginx.test.svc.cluster.local
