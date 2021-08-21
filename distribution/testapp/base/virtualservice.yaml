@@ -1,0 +1,21 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: nginx
+  namespace: test
+spec:
+  gateways:
+    - platform-gateway.istio-system.svc.cluster.local
+  hosts:
+    - "bychkow.ski"
+  http:
+    - match:
+        - uri:
+            prefix: /
+      rewrite:
+        uri: /
+      route:
+        - destination:
+            host: nginx.test.svc.cluster.local
+            port:
+              number: 80
