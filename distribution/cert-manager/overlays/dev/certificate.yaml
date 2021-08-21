@@ -9,5 +9,4 @@ spec:
     # The issuer created previously
     name: letsencrypt-prod
   dnsNames:
-  - bychkow.ski
-  - ops.bychkow.ski
+  - '*.bychkow.ski'
