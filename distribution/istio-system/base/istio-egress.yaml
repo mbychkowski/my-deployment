@@ -17,5 +17,5 @@ spec:
     namespace: istio-system
   syncPolicy:
     automated:
-      prune: true
-      selfHeal: true
+      prune: false
+      selfHeal: false
