@@ -5,7 +5,7 @@ metadata:
   namespace: test
 spec:
   gateways:
-    - platform-gateway.istio-system.svc.cluster.local
+    - istio-system/platform-gateway
   hosts:
     - "bychkow.ski"
   http:
