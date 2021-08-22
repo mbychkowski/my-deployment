@@ -12,8 +12,8 @@ spec:
   - match:
     - uri:
         prefix: /
-      route:
-        - destination:
-            host: nginx
-            port:
-              number: 80
+    route:
+      - destination:
+          host: nginx
+          port:
+            number: 80
