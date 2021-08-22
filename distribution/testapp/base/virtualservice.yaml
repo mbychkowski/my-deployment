@@ -7,7 +7,7 @@ spec:
   gateways:
     - platform-gateway.istio-system.svc.cluster.local
   hosts:
-    - "www.bychkow.ski"
+    - "bychkow.ski"
   http:
     - match:
         - uri:
