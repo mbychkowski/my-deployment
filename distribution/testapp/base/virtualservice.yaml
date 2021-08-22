@@ -9,10 +9,11 @@ spec:
   hosts:
     - "bychkow.ski"
   http:
-    - match: 
-      - port: 80
+  - match:
+    - uri:
+        prefix: /
       route:
         - destination:
             host: nginx
             port:
-              number: 443
+              number: 80
