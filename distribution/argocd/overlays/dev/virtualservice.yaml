@@ -9,12 +9,12 @@ spec:
   hosts:
     - 'ops.bychkow.ski'
   http:
-    # - match:
-    #     - uri:
-    #         prefix: /applications/
+    - match:
+        - uri:
+            prefix: /applications
     #   rewrite:
     #     uri: /argocd/
-    - route:
+      route:
         - destination:
             host: argocd-server
             port:
