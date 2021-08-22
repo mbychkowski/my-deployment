@@ -1,21 +1,21 @@
-apiVersion: networking.istio.io/v1alpha3
-kind: VirtualService
-metadata:
-  name: argocd-ui
-  namespace: argocd
-spec:
-  gateways:
-    - istio-system/platform-gateway
-  hosts:
-    - 'ops.bychkow.ski'
-  http:
-    - match:
-        - uri:
-            prefix: /applications
-    #   rewrite:
-    #     uri: /argocd/
-      route:
-        - destination:
-            host: argocd-server
-            port:
-              number: 80
+# apiVersion: networking.istio.io/v1alpha3
+# kind: VirtualService
+# metadata:
+#   name: argocd-ui
+#   namespace: argocd
+# spec:
+#   gateways:
+#     - istio-system/platform-gateway
+#   hosts:
+#     - 'ops.bychkow.ski'
+#   http:
+#     - match:
+#         - uri:
+#             prefix: /applications
+#       rewrite:
+#         uri: /applications
+#       route:
+#         - destination:
+#             host: argocd-server
+#             port:
+#               number: 80
