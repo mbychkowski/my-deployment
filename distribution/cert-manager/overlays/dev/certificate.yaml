@@ -5,8 +5,10 @@ metadata:
   namespace: istio-system
 spec:
   secretName: bychkow-ski-ingress-cert-tls
+  commonName: '*.bychkow.ski'
   issuerRef:
     # The issuer created previously
     name: letsencrypt-prod
   dnsNames:
   - 'bychkow.ski'
+  - '*.bychkow.ski'
