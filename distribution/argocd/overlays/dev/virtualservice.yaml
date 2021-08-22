@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 spec:
   gateways:
-    - platform-gateway.istio-system.svc.cluster.local
+    - istio-system/platform-gateway
   hosts:
     - "ops.bychkow.ski"
   http:
@@ -16,6 +16,6 @@ spec:
         uri: /argocd/
       route:
         - destination:
-            host: argocd-server.argocd.svc.cluster.local
+            host: argocd-server
             port:
               number: 80

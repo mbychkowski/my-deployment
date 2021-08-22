@@ -5,5 +5,6 @@ namespace: argocd
 resources:
   ## Common
 - ../../base/
+- virtualservice.yaml
 ## Only on initial deployment of argocd
 # - env/secret-gcp-kms.yaml
