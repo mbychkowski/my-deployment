@@ -14,14 +14,14 @@ spec:
       protocol: HTTP
     hosts:
     - 'bychkow.ski'      
-    tls:
-      httpsRedirect: true
-  - port:
-      number: 443
-      name: https
-      protocol: https
-    tls:
-      mode: SIMPLE
-      credentialName: bychkow-ski-ingress-cert-tls # This should match the Certificate secretName
-    hosts:
-    - 'bychkow.ski' # This should match a DNS name in the Certificate      
+    # tls:
+    #   httpsRedirect: true
+  # - port:
+  #     number: 443
+  #     name: https
+  #     protocol: https
+  #   tls:
+  #     mode: SIMPLE
+  #     credentialName: bychkow-ski-ingress-cert-tls # This should match the Certificate secretName
+  #   hosts:
+  #   - 'bychkow.ski' # This should match a DNS name in the Certificate      
