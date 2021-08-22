@@ -13,7 +13,7 @@ spec:
       number: 80
       protocol: HTTP
     hosts:
-    - 'bychkow.ski'      
+    - '*.bychkow.ski'      
     tls:
       httpsRedirect: true
   - port:
@@ -24,4 +24,4 @@ spec:
       mode: SIMPLE
       credentialName: bychkow-ski-ingress-cert-tls # This should match the Certificate secretName
     hosts:
-    - 'bychkow.ski' # This should match a DNS name in the Certificate      
+    - '*.bychkow.ski' # This should match a DNS name in the Certificate      

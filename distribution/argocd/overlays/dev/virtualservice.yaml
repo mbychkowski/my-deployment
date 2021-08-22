@@ -7,7 +7,7 @@ spec:
   gateways:
     - istio-system/platform-gateway
   hosts:
-    - "ops.bychkow.ski"
+    - 'ops.bychkow.ski'
   http:
     - match:
         - uri:
