@@ -9,11 +9,10 @@ spec:
   hosts:
     - "bychkow.ski"
   http:
-    - match:
-        - uri:
-            prefix: /
+    - match: 
+      - port: 80
       route:
         - destination:
-            host: nginx.test.svc.cluster.local
+            host: nginx
             port:
               number: 80
