@@ -12,8 +12,8 @@ spec:
     - match:
         - uri:
             prefix: /applications
-      rewrite:
-        uri: /
+      # rewrite:
+      #   uri: /applications
       route:
         - destination:
             host: argocd-server
