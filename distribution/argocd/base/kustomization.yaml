@@ -9,7 +9,7 @@ resources:
 patchesStrategicMerge:
 - patches/configmap-patch.yaml
 - patches/argocd-repo-server-patch.yaml
-- pathces/argocd-server.yaml
+- pathces/argocd-server-patch.yaml
 
 images:
 - name: ghcr.io/dexidp/dex
