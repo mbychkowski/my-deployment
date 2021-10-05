@@ -5,7 +5,7 @@ metadata:
   namespace: dex
 data:
   config.yaml: |
-    issuer: https://auth.bychkow.ski/oauth2
+    issuer: https://auth.bychkow.ski
     storage:
       type: kubernetes
       config:
@@ -19,14 +19,14 @@ data:
       config:
         clientID: $GITHUB_CLIENT_ID
         clientSecret: $GITHUB_CLIENT_SECRET
-        redirectURI: https://auth.bychkow.ski/oauth2/callback
+        redirectURI: https://auth.bychkow.ski/callback
         org: kubernetes
     oauth2:
       skipApprovalScreen: true
     staticClients:
     - id: dex-login-app
       redirectURIs:
-      - 'https://auth.bychkow.ski/oauth2/callback'
+      - 'https://auth.bychkow.ski/callback'
       name: 'Dex Login Application'
       secret: ZXhhbXBsZS1hcHAtc2VjcmV0
     enablePasswordDB: true
