@@ -5,7 +5,7 @@ metadata:
   namespace: dex
 data:
   config.yaml: |
-    issuer: https://auth.bychkow.ski
+    issuer: https://auth.bychkow.ski/oauth2
     storage:
       type: kubernetes
       config:
