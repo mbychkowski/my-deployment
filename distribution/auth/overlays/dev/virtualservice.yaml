@@ -9,10 +9,7 @@ spec:
   hosts:
     - 'auth.bychkow.ski'
   http:
-    - match:
-        - uri:
-            prefix: /
-      route:
+    - route:
         - destination:
             host: dex.dex.svc.cluster.local
             port:

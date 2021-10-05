@@ -24,10 +24,10 @@ data:
     oauth2:
       skipApprovalScreen: true
     staticClients:
-    - id: example-app
+    - id: dex-login-app
       redirectURIs:
       - 'https://auth.bychkow.ski/oauth2/callback'
-      name: 'Example App'
+      name: 'Dex Login Application'
       secret: ZXhhbXBsZS1hcHAtc2VjcmV0
     enablePasswordDB: true
     staticPasswords:
