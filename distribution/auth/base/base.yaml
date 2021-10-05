@@ -31,7 +31,7 @@ spec:
 
         ports:
         - name: http
-          containerPort: 5556
+          containerPort: 5555
 
         volumeMounts:
         - name: config
@@ -52,7 +52,7 @@ spec:
         readinessProbe:
           httpGet:
             path: /healthz
-            port: 5556
+            port: 5555
             scheme: HTTP
       volumes:
       - name: config
@@ -71,7 +71,7 @@ spec:
   type: ClusterIP
   ports:
   - name: dex
-    port: 5556
+    port: 5555
     protocol: TCP
   selector:
     app: dex
