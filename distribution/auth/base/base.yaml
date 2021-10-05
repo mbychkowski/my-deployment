@@ -51,7 +51,7 @@ spec:
 
         readinessProbe:
           httpGet:
-            path: /healthz
+            path: /dex/healthz
             port: 5556
             scheme: HTTP
       volumes:
