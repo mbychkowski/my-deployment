@@ -28,7 +28,7 @@ data:
     staticClients:
     - id: dex-login-app
       redirectURIs:
-      - 'http://dex.dex.svc.cluster.local/callback'
+      - 'https://auth.bychkow.ski'
       name: 'Dex Login Application'
       secret: ZXhhbXBsZS1hcHAtc2VjcmV0
     enablePasswordDB: true
