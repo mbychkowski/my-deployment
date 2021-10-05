@@ -20,6 +20,8 @@ data:
         clientID: $GITHUB_CLIENT_ID
         clientSecret: $GITHUB_CLIENT_SECRET
         redirectURI: https://auth.bychkow.ski/callback
+        orgs: 
+        - name: semantically-ai
     oauth2:
       responseTypes: ["code", "token", "id_token"]
       skipApprovalScreen: true
