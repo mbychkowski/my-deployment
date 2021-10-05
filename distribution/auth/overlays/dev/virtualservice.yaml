@@ -13,4 +13,4 @@ spec:
         - destination:
             host: dex.dex.svc.cluster.local
             port:
-              number: 5555
+              number: 5556
