@@ -6,4 +6,4 @@ resources:
 - gateway.yaml
 - ingress.yaml
 - egress.yaml
-# - peerauthentication.yaml
+- peerauthentication.yaml
