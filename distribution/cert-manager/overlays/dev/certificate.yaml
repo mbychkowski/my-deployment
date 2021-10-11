@@ -12,3 +12,18 @@ spec:
   dnsNames:
   - 'bychkow.ski'
   - '*.bychkow.ski'
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: bychkowski-dev-ingress-cert
+  namespace: istio-system
+spec:
+  secretName: bychkowski-dev-ingress-cert-tls
+  commonName: '*.bychkowski.dev'
+  issuerRef:
+    # The issuer created previously
+    name: letsencrypt-prod
+  dnsNames:
+  - 'bychkowski.dev'
+  - '*.bychkowski.dev'

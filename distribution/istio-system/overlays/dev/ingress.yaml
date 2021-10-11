@@ -19,3 +19,30 @@ spec:
     automated:
       prune: false
       selfHeal: false
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: istio-ingressgateway-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/istio/istio.git
+    targetRevision: '1.11.0'
+    path: manifests/charts/gateways/istio-ingress
+    helm:
+      values: |
+        gateways:
+          istio-ingressgateway:
+            name: istio-ingressgateway-dev
+            labels:
+              app: istio-ingressgateway-dev
+              istio: ingressgateway-dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: istio-system
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false

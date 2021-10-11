@@ -10,3 +10,4 @@ resources:
 - config.yaml
 - virtualservice.yaml
 - envoyfilter.yaml
+- authentication.yaml

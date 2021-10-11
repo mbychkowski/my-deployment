@@ -25,3 +25,31 @@ spec:
       credentialName: bychkow-ski-ingress-cert-tls # This should match the Certificate secretName
     hosts:
     - '*.bychkow.ski' # This should match a DNS name in the Certificate      
+---
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: dev-gateway
+  namespace: istio-system
+spec:
+  selector:
+    istio: ingressgateway-dev
+    app: istio-ingressgateway-dev
+  servers:
+  - port:
+      name: http
+      number: 80
+      protocol: HTTP
+    hosts:
+    - '*.bychkowski.dev'      
+    tls:
+      httpsRedirect: true
+  - port:
+      number: 443
+      name: https
+      protocol: https
+    tls:
+      mode: SIMPLE
+      credentialName: bychkowski-dev-ingress-cert-tls # This should match the Certificate secretName
+    hosts:
+    - '*.bychkowski.dev' # This should match a DNS name in the Certificate      

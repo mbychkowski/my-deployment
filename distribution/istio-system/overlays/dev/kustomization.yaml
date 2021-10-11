@@ -7,4 +7,3 @@ resources:
 - ingress.yaml
 - egress.yaml
 - peerauthentication.yaml
-- auth.yaml
