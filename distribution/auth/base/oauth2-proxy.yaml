@@ -6,16 +6,6 @@ metadata:
     istio-injection: enabled
 ---
 apiVersion: v1
-kind: Secret
-metadata:
-  name: oauth2-proxy
-  namespace: oauth2-proxy
-stringData:
-  OAUTH2_PROXY_CLIENT_ID: $CLIENT_ID
-  OAUTH2_PROXY_CLIENT_SECRET: $CLIENT_SECRET
-  OAUTH2_PROXY_COOKIE_SECRET: $COOKIE_SECRET
----
-apiVersion: v1
 kind: Service
 metadata:
   name: oauth2-proxy

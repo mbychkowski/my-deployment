@@ -14,3 +14,6 @@ spec:
             host: dex.dex.svc.cluster.local
             port:
               number: 5556
+      match:
+      - uri:
+          prefix: /oauth2   
