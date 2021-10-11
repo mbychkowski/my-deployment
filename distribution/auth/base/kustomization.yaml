@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
 - oidc.yaml
-# - oauth2-proxy.yaml
+- oauth2-proxy.yaml
