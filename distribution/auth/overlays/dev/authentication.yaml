@@ -8,8 +8,8 @@ spec:
     matchLabels:
       app: istio-ingressgateway
   jwtRules:
-  - issuer: https://auth.bychkow.ski
-    jwksUri: https://auth.bychkow.ski/keys
+  - issuer: https://login.bychkowski.dev
+    jwksUri: https://login.bychkowski.dev/keys
 ---
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
