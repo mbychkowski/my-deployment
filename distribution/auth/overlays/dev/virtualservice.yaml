@@ -5,7 +5,7 @@ metadata:
   namespace: dex
 spec:
   gateways:
-    - istio-system/platform-gateway
+    - istio-system/dev-gateway
   hosts:
     - 'login.bychkowski.dev'
   http:
