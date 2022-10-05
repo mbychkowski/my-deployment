@@ -3,12 +3,12 @@ kind: Kustomization
 
 resources:
   ## Common
-  - _argocd-applications/argocd.yaml
-  - _argocd-applications/istio-system.yaml
-  - _argocd-applications/cert-manager.yaml
-  - _argocd-applications/dex-auth.yaml
+  # - _argocd-applications/argocd.yaml
+  # - _argocd-applications/istio-system.yaml
+  # - _argocd-applications/cert-manager.yaml
+  # - _argocd-applications/dex-auth.yaml
 
   - _argocd-applications/testapp.yaml
 
-  - _argocd-applications/platform.yaml
+  # - _argocd-applications/platform.yaml
   
