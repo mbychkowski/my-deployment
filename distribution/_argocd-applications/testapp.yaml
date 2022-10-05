@@ -9,8 +9,8 @@ spec:
     repoURL: git@github.com:mbychkowski/my-deployment.git
     targetRevision: HEAD
     path: distribution/testapp/base
-    # kustomize:
-    #   version: v4.2.0_ksops.v2.6.0
+    kustomize:
+      version: v4.2.0_ksops.v2.6.0
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
