@@ -4,23 +4,23 @@ namespace: argocd
 
 resources:
 - namespace.yaml
-- github.com/argoproj/argo-cd/manifests/cluster-install?ref=014ab697fe3f215f3e778a73b637ee44a745df67 # tag=v2.2.12
+- github.com/argoproj/argo-cd/manifests/cluster-install?ref=25cfb27d5102e203cd7683842aad88c9c8448511 # tag=v2.2.0
 
-# patchesStrategicMerge:
-# - patches/configmap-patch.yaml
-# - patches/argocd-repo-server-patch.yaml
-# - patches/argocd-server-patch.yaml
+patchesStrategicMerge:
+- patches/configmap-patch.yaml
+- patches/argocd-repo-server-patch.yaml
+- patches/argocd-server-patch.yaml
 
-# images:
-# - name: ghcr.io/dexidp/dex
-#   newName: ghcr.io/dexidp/dex
-#   newTag: v2.27.0
-# - name: quay.io/argoproj/argocd
-#   newName: quay.io/argoproj/argocd
-#   newTag: v2.0.5
-# - name: haproxy
-#   newName: haproxy
-#   newTag: 2.0.20-alpine
-# - name: redis
-#   newName: redis
-#   newTag: 6.2.4-alpine
+images:
+- name: ghcr.io/dexidp/dex
+  newName: ghcr.io/dexidp/dex
+  newTag: v2.27.0
+- name: quay.io/argoproj/argocd
+  newName: quay.io/argoproj/argocd
+  newTag: v2.0.5
+- name: haproxy
+  newName: haproxy
+  newTag: 2.0.20-alpine
+- name: redis
+  newName: redis
+  newTag: 6.2.4-alpine
