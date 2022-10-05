@@ -6,9 +6,9 @@ resources:
 - namespace.yaml
 - github.com/argoproj/argo-cd/manifests/cluster-install?ref=014ab697fe3f215f3e778a73b637ee44a745df67 # tag=v2.2.12
 
-patchesStrategicMerge:
-- patches/configmap-patch.yaml
-- patches/argocd-repo-server-patch.yaml
+# patchesStrategicMerge:
+# - patches/configmap-patch.yaml
+# - patches/argocd-repo-server-patch.yaml
 # - patches/argocd-server-patch.yaml
 
 # images:
