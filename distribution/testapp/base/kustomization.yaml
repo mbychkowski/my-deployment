@@ -9,5 +9,5 @@ resources:
 - namespace.yaml
 - deployment.yaml
 - service.yaml
-- secret.enc.yaml
+# - secret.enc.yaml
 # - virtualservice.yaml
